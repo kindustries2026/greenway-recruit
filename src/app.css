@@ -1,29 +1,45 @@
-:root {
-  font-family: 'Outfit', system-ui, sans-serif;
-  color: #e8ede5;
-  background:
-    radial-gradient(circle at top, rgba(78, 122, 85, 0.18), transparent 35%),
-    linear-gradient(180deg, #08100c 0%, #0d120f 50%, #090b0a 100%);
-  color-scheme: dark;
-}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+Display:wght@500;600;700&display=swap');
+@import "tailwindcss";
 
-* {
-  box-sizing: border-box;
-}
+@layer base {
+  :root {
+    font-family: 'Manrope', system-ui, sans-serif;
+    color: #eef4eb;
+    color-scheme: dark;
+    --brand-bg: #111712;
+    --brand-panel: rgba(244, 248, 239, 0.04);
+    --brand-panel-strong: rgba(244, 248, 239, 0.06);
+    --brand-line: rgba(196, 214, 176, 0.09);
+    --brand-line-strong: rgba(184, 216, 165, 0.26);
+    --brand-accent: #a6cb84;
+    --brand-accent-soft: #d6e4c1;
+    --brand-copy: #dde6d7;
+    --brand-muted: #9ca794;
+    background:
+      radial-gradient(circle at top, rgba(166, 203, 132, 0.1), transparent 28%),
+      radial-gradient(circle at 18% 18%, rgba(108, 138, 93, 0.1), transparent 34%),
+      linear-gradient(180deg, #141a15 0%, #171d17 48%, #111612 100%);
+  }
 
-html,
-body,
-#root {
-  min-height: 100%;
-}
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
 
-body {
-  margin: 0;
-}
+  body {
+    margin: 0;
+    background:
+      radial-gradient(circle at top, rgba(166, 203, 132, 0.08), transparent 24%),
+      linear-gradient(180deg, #141a15 0%, #171d17 48%, #111612 100%);
+  }
 
-.app-shell {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: 24px 16px;
+  a {
+    color: inherit;
+  }
+
+  ::selection {
+    background: rgba(143, 198, 111, 0.3);
+    color: #f5faef;
+  }
 }
