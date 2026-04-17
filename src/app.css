@@ -1,0 +1,29 @@
+:root {
+  font-family: 'Outfit', system-ui, sans-serif;
+  color: #e8ede5;
+  background:
+    radial-gradient(circle at top, rgba(78, 122, 85, 0.18), transparent 35%),
+    linear-gradient(180deg, #08100c 0%, #0d120f 50%, #090b0a 100%);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+}
